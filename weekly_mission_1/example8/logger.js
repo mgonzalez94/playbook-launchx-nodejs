@@ -1,0 +1,15 @@
+/**
+ * export default class nos permite exportar esta clase e importarla
+ * 
+ * import myLogger from './logger.js'
+ */
+
+export default class Logger {
+    constructor (name) {
+        this.name = name
+    }
+
+    log (message) {
+        console.log(`[${this.name}] ${message}`)
+    }
+}
